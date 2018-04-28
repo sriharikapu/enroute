@@ -9,7 +9,7 @@ const {
   GoogleMap,
 } = require("react-google-maps");
 const { InfoBox } = require("react-google-maps/lib/components/addons/InfoBox");
-const demoFancyMapStyles = require("./demoFancyMapStyles.json");
+const baseFancyMapStyles = require("./baseFancyMapStyles.json");
 
 const StyledMapWithAnInfoBox = compose(
   withProps({
@@ -17,7 +17,7 @@ const StyledMapWithAnInfoBox = compose(
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100vh` }} />,
     mapElement: <div style={{ height: `100vh` }} />,
-    center: { lat: 51.507351, lng: -0.127758 },
+    center: { lat: 51.476012, lng: 0.149261 },
   }),
   withStateHandlers(() => ({
     isOpen: false,
@@ -30,21 +30,10 @@ const StyledMapWithAnInfoBox = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={12}
+    defaultZoom={8}
     defaultCenter={props.center}
-    defaultOptions={{ styles: demoFancyMapStyles }}
+    defaultOptions={{ styles: baseFancyMapStyles }}
   >
-    {/* <InfoBox
-      defaultPosition={new google.maps.LatLng(props.center.lat, props.center.lng)}
-      options={{ closeBoxURL: ``, enableEventPropagation: true }}
-    >
-      <div style={{ backgroundColor: `yellow`, opacity: 0.75, padding: `12px` }}>
-        <div style={{ fontSize: `16px`, fontColor: `#08233B` }}>
-          Hello, Taipei!
-        </div>
-      </div>
-    </InfoBox> */}
-
   </GoogleMap>
 );
 

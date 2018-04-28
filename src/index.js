@@ -13,8 +13,6 @@ import createBrowserHistory from 'history/createBrowserHistory';
 import reducers from './reducers';
 
 import Home from './pages/Home';
-import BaseMap from './pages/BaseMap';
-import DirectionMap from './pages/DirectionMap';
 import Manufacturer from "./pages/Manufacturer";
 
 // CSS font
@@ -33,8 +31,6 @@ ReactDOM.render(
         <Switch>
 
             <Route exact path='/' component={ Home } />
-            <Route exact path='/basemap' component={ BaseMap } />
-            <Route exact path='/directionmap' component={ DirectionMap } />
 
             <Route exact path='/manufacturer' component={ Manufacturer } />
 

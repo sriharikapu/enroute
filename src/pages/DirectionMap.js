@@ -25,8 +25,8 @@ const MapWithADirectionsRenderer = compose(
       const DirectionsService = new google.maps.DirectionsService();
 
       DirectionsService.route({
-        origin: new google.maps.LatLng(41.8507300, -87.6512600),
-        destination: new google.maps.LatLng(35.8525800, -87.6514100),
+        origin: new google.maps.LatLng(51.498246, -0.129274),
+        destination: new google.maps.LatLng(51.302181, -0.717972),
         travelMode: google.maps.TravelMode.DRIVING,
       }, (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -40,25 +40,21 @@ const MapWithADirectionsRenderer = compose(
     }
   })
 )(props =>
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={props.center}
-    defaultOptions={{ styles: demoFancyMapStyles }}
-    defaultCenter={new google.maps.LatLng(41.8507300, -87.6512600)}
-  >
+    <GoogleMap
+        defaultZoom={15}
+        defaultOptions={{ styles: demoFancyMapStyles }}
+        defaultCenter={new google.maps.LatLng(51.476012, 0.149261)}
+    >
     {props.directions && <DirectionsRenderer 
         directions={props.directions}
         options={{
             suppressMarkers: true,
-            polylineOptions: {
-                strokeColor: 'white'
-            }
+            polylineOptions: { strokeColor: 'white'}
         }}
+        defaultCenter={new google.maps.LatLng(51.476012, 0.149261)}
     />}
   </GoogleMap>
 );
-
-
 
 class DirectionMap extends Component {
     render() {

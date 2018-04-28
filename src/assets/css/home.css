@@ -41,3 +41,6 @@
 .track-btn {
     width: 18em;
 }
+.track-btn:hover {
+    color: rgb(59, 218, 242) !important;
+}

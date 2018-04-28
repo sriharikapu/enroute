@@ -31,7 +31,7 @@ class Home extends Component {
                 <div className="col s4 m4" />
                 <div className="col s4 m4">
                     <div className="track-btn-block moveFromBottomFade delay300">
-                        <Link to="/basemap">
+                        <Link to="/manufacturer">
                             <div className="waves-effect waves-light btn-large purple lighten-1 track-btn">Start Tracking</div>
                         </Link>
                     </div>
