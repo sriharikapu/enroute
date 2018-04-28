@@ -26,3 +26,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.colorzz {
+  color: #ac2c41;
+  color: #79101b; 
+  color: #341010;
+  color: #08304b;
+  color: #ffffff;
+  color: #e2bc8d;
+}
