@@ -7,6 +7,7 @@ const {
   withScriptjs,
   withGoogleMap,
   GoogleMap,
+  Marker
 } = require("react-google-maps");
 const { InfoBox } = require("react-google-maps/lib/components/addons/InfoBox");
 const baseFancyMapStyles = require("./baseFancyMapStyles.json");
@@ -17,7 +18,7 @@ const StyledMapWithAnInfoBox = compose(
     loadingElement: <div style={{ height: `100%` }} />,
     containerElement: <div style={{ height: `100vh` }} />,
     mapElement: <div style={{ height: `100vh` }} />,
-    center: { lat: 51.476012, lng: 0.149261 },
+    center: { lat: 51.462240, lng: 1.487779 },
   }),
   withStateHandlers(() => ({
     isOpen: false,
@@ -34,6 +35,9 @@ const StyledMapWithAnInfoBox = compose(
     defaultCenter={props.center}
     defaultOptions={{ styles: baseFancyMapStyles }}
   >
+  <Marker
+    position={{ lat: 51.507351, lng: -0.127758 }}
+  />
   </GoogleMap>
 );
 
