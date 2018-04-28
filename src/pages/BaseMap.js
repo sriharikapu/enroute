@@ -1,7 +1,6 @@
 /*global google*/
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../assets/css/map.css';
 
 const { compose, withProps, withStateHandlers } = require("recompose");
 const {
@@ -16,9 +15,9 @@ const StyledMapWithAnInfoBox = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `1600px` }} />,
-    mapElement: <div style={{ height: `100%` }} />,
-    center: { lat: 25.03, lng: 121.6 },
+    containerElement: <div style={{ height: `100vh` }} />,
+    mapElement: <div style={{ height: `100vh` }} />,
+    center: { lat: 51.507351, lng: -0.127758 },
   }),
   withStateHandlers(() => ({
     isOpen: false,
@@ -31,11 +30,11 @@ const StyledMapWithAnInfoBox = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={9}
+    defaultZoom={10}
     defaultCenter={props.center}
     defaultOptions={{ styles: demoFancyMapStyles }}
   >
-    <InfoBox
+    {/* <InfoBox
       defaultPosition={new google.maps.LatLng(props.center.lat, props.center.lng)}
       options={{ closeBoxURL: ``, enableEventPropagation: true }}
     >
@@ -44,21 +43,19 @@ const StyledMapWithAnInfoBox = compose(
           Hello, Taipei!
         </div>
       </div>
-    </InfoBox>
+    </InfoBox> */}
 
   </GoogleMap>
 );
 
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <StyledMapWithAnInfoBox />
-        {/* what if position fixed */}
-      </div>
-    );
-  }
+class BaseMap extends Component {
+    render() {
+        return (
+            <div className="google-map-container">
+                <StyledMapWithAnInfoBox />
+            </div>
+        )
+    }
 }
 
-export default App;
+export default BaseMap;
