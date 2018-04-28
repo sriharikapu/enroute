@@ -30,7 +30,7 @@ const StyledMapWithAnInfoBox = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={10}
+    defaultZoom={12}
     defaultCenter={props.center}
     defaultOptions={{ styles: demoFancyMapStyles }}
   >

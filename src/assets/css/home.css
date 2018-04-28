@@ -12,6 +12,11 @@
     color: #8a3369;
     text-align: center;
 }
+.side-title {
+    font-size: 1.75em;
+    color: #8a3369;
+    text-align: center;
+}
 .home-splash-block {
     margin-top: 1em;
     background-color: rgba(0,0,0,0) !important;
@@ -28,111 +33,11 @@
     text-align: center;
     font-size: 1.45em;
 }
-.home-title-bot-text {
-    /* margin-top: -0.15em; */
-    /* color: rgb(34, 145, 159); */
-    color: rgb(54, 134, 104);
-    text-align: center;
-    font-size: 1.45em;
+.track-btn-block {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 18em;
 }
-
-.home-page-space {
-    height: 18em;
-}
-
-.laptop-img-block {
-    text-align: center;
-    margin-bottom: 14em;
-}
-.laptop-text {
-    margin-bottom: 3em;
-    margin-left: -6em;
-    color: rgb(172, 80, 141);
-    font-size: 1.25em;
-}
-.laptop-img {
-    width: 70%;
-}
-
-.home-nav-box-top {
-    height: 3em;
-    background-color: #34b3d3;
-    color: white;
-    font-size: 1.25em;
-    padding-top: 0.75em;
-    padding-left: 1.5em;
-}
-.home-nav-card {
-    cursor: pointer;
-    margin-top: 1em;
-    border-width: 0.1em;
-    border-style: solid;
-    border-color: #34b3d3 !important; 
-}
-.home-page-rep-main-text {
-    font-size: 1em;
-    color: #34b3d3;
-    height: 8em;
-    padding-top: 0.5em;
-}
-.home-page-icon {
-    font-size: 4.25em !important;
-    margin-top: 0.25em;
-    margin-left: 0.25em;
-}
-.home-link-bar {
-    height: 0.75em;
-}
-.home-end-card {
-    cursor: pointer;
-    margin-top: 1em;
-    border-width: 0.1em;
-    border-style: solid;
-    border-color: #99c782 !important; 
-}
-.home-end-box-top {
-    height: 3em;
-    background-color: #99c782;
-    color: white;
-    font-size: 1.25em;
-    padding-top: 0.75em;
-    padding-left: 1.5em;
-}
-.home-page-end-main-text {
-    font-size: 1em;
-    color: #99c782;
-    height: 7em;
-    padding-top: 1.75em;
-}
-.home-end-page-icon {
-    font-size: 3.75em !important;
-    margin-top: -0.1em;
-    margin-left: 0.25em;
-}
-
-.home-client-card {
-    cursor: pointer;
-    margin-top: 1em;
-    border-width: 0.1em;
-    border-style: solid;
-    border-color: #bb7fda !important; 
-}
-.home-client-box-top {
-    height: 3em;
-    background-color: #bb7fda;
-    color: white;
-    font-size: 1.25em;
-    padding-top: 0.75em;
-    padding-left: 1.5em;
-}
-.home-page-client-main-text {
-    font-size: 1em;
-    color: #bb7fda;
-    height: 7em;
-    padding-top: 1.78em;
-}
-.home-client-page-icon {
-    font-size: 3.25em !important;
-    margin-top: 0em;
-    margin-left: 0.55em;
+.track-btn {
+    width: 18em;
 }

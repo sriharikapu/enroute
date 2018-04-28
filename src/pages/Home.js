@@ -16,15 +16,27 @@ class Home extends Component {
         <div className="home-background-color">
             <div className="row">
                 <div className="col s12 m12 home-splash-block">
-                    <img src={splashHero} className="home-splash-img moveFromTopFade" onClick={() => this.scrollDown()} />
+                    <img src={splashHero} className="home-splash-img moveFromTopFade"/>
                 </div>
             </div>
             <div className="row">
                 <div className="col s2 m2" />
                 <div className="col s8 m8">
-                    <h1 className="main-title">EnRoute</h1>
+                    <h1 className="main-title moveFromTopFade delay100">EnRoute</h1>
+                    <h3 className="side-title moveFromBottomFade delay200">The Smart Contract solution for Track and Trace on the Supply Chain</h3>
                 </div>
                 <div className="col s2 m2" />
+            </div>
+            <div className="row">
+                <div className="col s4 m4" />
+                <div className="col s4 m4">
+                    <div className="track-btn-block moveFromBottomFade delay300">
+                        <Link to="/basemap">
+                            <div className="waves-effect waves-light btn-large purple lighten-1 track-btn">Start Tracking</div>
+                        </Link>
+                    </div>
+                </div>
+                <div className="col s4 m4" />
             </div>
         </div>
 
