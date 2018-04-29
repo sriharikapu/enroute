@@ -1,6 +1,6 @@
 /*global google*/
 import React, { Component } from 'react';
-import '../assets/css/map.css';
+import '../../assets/css/map.css';
 
 const { compose, withProps, lifecycle } = require("recompose");
 const {
@@ -9,7 +9,7 @@ const {
   GoogleMap,
   DirectionsRenderer,
 } = require("react-google-maps");
-const demoFancyMapStyles = require("./demoFancyMapStyles.json");
+const demoFancyMapStyles = require("../../assets/styles/demoFancyMapStyles.json");
 
 const MapWithADirectionsRenderer = compose(
   withProps({

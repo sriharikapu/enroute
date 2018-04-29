@@ -7,12 +7,13 @@ import * as actions from '../actions/test';
 
 import '../assets/css/manufacturer.css';
 
-import DirectionMap from './DirectionMap';
-import BaseMap from './BaseMap';
-import SKUTable from './SKUTable';
-import Finalize from './Finalize';
+import DirectionMap from '../components/maps/DirectionMap';
+import BaseMap from '../components/maps/BaseMap';
+import SKUTable from '../components/SKUTable';
+import Finalize from '../components/Finalize';
 
 class Manufacturer extends Component {
+
     state = { map: null };
 
     componentDidMount() {
@@ -32,7 +33,7 @@ class Manufacturer extends Component {
             // display finalized
             $(".finalize-area").addClass("moveFromBottomFade");
             $(".finalize-area").show();
-            
+
             return( <DirectionMap className="map-section" /> );
         }else{
             return( <BaseMap className="map-section" /> );
@@ -108,6 +109,7 @@ class Manufacturer extends Component {
                                             Manufactuer Inventory Shipment Preview
                                         </div>
                                         </div>
+                                        
                                         <SKUTable className="sku-table-section" />
 
                                         <div className="sku-table-btn" onClick={() => this.showMap()}>Ready to Ship</div>
@@ -118,13 +120,13 @@ class Manufacturer extends Component {
 
                         </div>
 
-                        {/* finalized */}
+                        {/* finalized component */}
                         <Finalize />
 
                     </div>
                 </div>
 
-                { this.displayMap() }
+                {this.displayMap()}
 
             </div>
         )

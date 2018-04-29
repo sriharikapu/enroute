@@ -17,7 +17,7 @@ class Finalize extends Component {
                                     <div className="finalize-end-icon fa fa-bullseye" />
                                     <div className="finalize-end-text">Trucking Center</div>
                                     <div className="finalize-go-icon fa fa-check-circle" />
-                                    <Link to="/">
+                                    <Link to="/truck">
                                         <div className="finalize-go-btn">Send Shipment</div>
                                     </Link>
                                 </div>

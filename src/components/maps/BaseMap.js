@@ -1,6 +1,6 @@
 /*global google*/
 import React, { Component } from 'react';
-import '../assets/css/map.css';
+import '../../assets/css/map.css';
 
 const { compose, withProps, withStateHandlers } = require("recompose");
 const {
@@ -10,7 +10,7 @@ const {
   Marker
 } = require("react-google-maps");
 const { InfoBox } = require("react-google-maps/lib/components/addons/InfoBox");
-const baseFancyMapStyles = require("./baseFancyMapStyles.json");
+const baseFancyMapStyles = require("../../assets/styles/baseFancyMapStyles.json");
 
 const StyledMapWithAnInfoBox = compose(
   withProps({

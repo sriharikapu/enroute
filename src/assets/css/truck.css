@@ -1,0 +1,73 @@
+.truck-section {
+    width: 100%;
+}
+
+.truck-block {
+    height: 5em;
+    border: 0.2em solid rgb(255, 255, 255);
+}
+.truck-header-icon {
+    color: rgb(255, 255, 255);
+    margin-right: 0.5em;
+    margin-left: 1.75em;
+}
+.truck-header-main-text {
+    color: rgb(244, 209, 122);
+    font-size: 1.75em;
+    margin-top: -0.35em;
+}
+.truck-header-btn {
+    margin-left: 1.5em;
+    background-color: rgb(245, 115, 59) !important;
+    color: rgb(250, 250, 250) !important;
+    font-weight: 400;
+}
+.truck-header-btn:hover {
+    margin-left: 1.5em;
+    background-color: rgb(235, 89, 27) !important;
+    color: rgb(247, 209, 126) !important;
+    font-weight: 400;
+}
+
+.truck-time-block {
+    height: 10em;
+    border: 0.2em solid rgb(255, 255, 255);
+    display: none;
+}
+.truck-body-table {
+    margin-top: 2em;
+    height: 28em;
+    background-color: white;
+    display: none;
+}
+.truck-time-main-text {
+    text-align: center;
+    background-color: #75c8e6;
+    color: rgb(89, 86, 86);
+    line-height: 1em;
+    font-size: 1.5em;
+    margin-top: -0.5em;
+    padding: 0.3em;
+    border: 0.01em solid #f0f0f0;
+    margin-left: 6em;
+    margin-right: 6em;
+}
+.truck-time-icon {
+    color: powderblue;
+    line-height: 1em;
+    font-size: 3.5em !important;
+    margin-top: 0.4em;
+    margin-left: 0.2em;
+}
+.truck-time-left-text {
+    color: rgb(126, 215, 126);
+    margin-top: 1.5em;
+    font-size: 1.35em;
+    text-shadow: 1px 1px #4b544e;
+}
+.truck-time-right-text {
+    color: rgb(230, 126, 180);
+    margin-top: 1.5em;
+    font-size: 1.35em;
+    text-shadow: 1px 1px #683e75;
+}
