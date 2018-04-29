@@ -15,6 +15,7 @@ import reducers from './reducers';
 import Home from './pages/Home';
 import Manufacturer from "./pages/Manufacturer";
 import Truck from './pages/Truck';
+import Supermarket from './pages/Supermarket';
 
 // CSS font
 import '../node_modules/font-awesome/css/font-awesome.min.css';
@@ -35,6 +36,7 @@ ReactDOM.render(
 
             <Route exact path='/manufacturer' component={ Manufacturer } />
             <Route exact path='/truck' component={ Truck } />
+            <Route exact path='/supermarket' component={ Supermarket } />
 
         </Switch>
 

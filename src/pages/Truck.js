@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 import $ from 'jquery';
 
@@ -6,6 +7,7 @@ import '../assets/css/truck.css';
 import '../assets/css/manufacturer.css';
 
 import TruckMap from '../components/maps/TruckMap';
+import TruckDirectionMap from '../components/maps/TruckDirectionMap';
 import SKUTable from '../components/SKUTable';
 
 class Truck extends Component {
@@ -13,17 +15,27 @@ class Truck extends Component {
     state = { map: null };
 
     displayTime() {
-        $(".truck-time-block").show()
         $(".truck-body-table").show();
-        $(".truck-time-block").addClass("moveFromBottomFade");
         $(".truck-body-table").addClass("moveFromBottomFade delay100");
     }
     displayMap() {
         if(this.state.map) {
-            return( <TruckMap className="map-section" /> );
+            $(".truck-block").addClass("moveFromTopFade");
+            $(".truck-block").hide()
+            $(".truck-body-table").addClass("moveFromTopFade delay100");
+            $(".truck-body-table").hide();
+            $('.truck-block-bot').addClass("moveFromBottomFade");
+            $(".truck-time-block").show();
+            $(".truck-time-block").addClass("moveFromBottomFade");
+            $('.truck-block-bot').show();
+
+            return( <TruckDirectionMap className="map-section" /> );
         }else{
             return( <TruckMap className="map-section" /> );
         }
+    }
+    showMap() {
+        this.setState({map: true});
     }
 
     render() {
@@ -53,7 +65,7 @@ class Truck extends Component {
                                     <div className="truck-time-main-text">Delivery Time</div>
                                     <div className="row">
                                         <div className="col s5 m5">
-                                            <div className="truck-time-left-text">Pickup Time: 9:00 AM</div>
+                                            <div className="truck-time-left-text">Depart Time: 9:00 AM</div>
                                         </div>
                                         <div className="col s2 m2">
                                             <div className="fa fa-arrow-circle-o-right truck-time-icon" />
@@ -84,6 +96,21 @@ class Truck extends Component {
                                     
                                     <SKUTable className="sku-table-section" />
                                     <div className="sku-table-btn" onClick={() => this.showMap()}>Ready to Ship</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* departure */}
+                        <div className="row">
+                            <div className="col s12 m12">
+                                <div className="card card-panel truck-block-bot z-depth-3">
+                                    <div className="truck-bot-main-text">
+                                    <div className="fa fa-rocket truck-bot-icon" />
+                                    Truck Loaded and Ready
+                                    <Link to="/supermarket">
+                                    <div className="waves-effect waves-light btn truck-bot-btn">Depart Now</div>
+                                    </Link>
+                                    </div>
                                 </div>
                             </div>
                         </div>

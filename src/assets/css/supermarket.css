@@ -1,0 +1,52 @@
+.clean-row {
+    padding: 0em !important;
+}
+
+.supermarket-bg {
+    height: 100vh;
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.supermaerket-section {
+    background-color: mintcream;
+    margin-top: 3em !important;
+}
+.supermarket-header-left-tile {
+    height: 2em;
+    background-color: orange;
+}
+.supermarket-headerimg {
+    margin-top: 1em;
+    margin-left: 0.25em;
+}
+.supermarket-header-right-tile {
+    height: 2em;
+    background-color: rgb(199, 199, 198);
+}
+.supermarket-header-left-block {
+    height: 12em;
+    /* border: 0.01em solid rgb(150, 149, 149); */
+}
+.supermarket-title-text {
+    font-size: 2.75em;
+    margin-top: 0.45em;
+    margin-left: 0.5em;
+    color: rgb(47, 140, 194);
+}
+.supermarket-bot-text {
+    font-size: 1.75em;
+    color: orange;
+    margin-left: 0.8em;
+}
+
+.supermarket-body-left-block {
+    height: 29em;
+    border: 0.01em solid rgb(198, 198, 198);
+    background-color: rgb(85, 195, 215);
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+.manufactuer-body-table {
+    border: 0.01em solid rgb(198, 198, 198);
+}

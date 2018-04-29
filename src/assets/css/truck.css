@@ -30,6 +30,8 @@
 }
 
 .truck-time-block {
+    margin-top: -3.5em !important;
+    margin-bottom: 2em !important;
     height: 10em;
     border: 0.2em solid rgb(255, 255, 255);
     display: none;
@@ -70,4 +72,26 @@
     margin-top: 1.5em;
     font-size: 1.35em;
     text-shadow: 1px 1px #683e75;
+}
+.truck-block-bot {
+    margin-top: -4em !important;
+    height: 5em;
+    border: 0.2em solid rgb(70, 104, 148);
+    display:none;
+}
+.truck-bot-icon {
+    color: rgb(70, 104, 148);
+    margin-right: 0.5em;
+    margin-left: 1.75em;
+}
+.truck-bot-main-text {
+    color: rgb(40, 125, 164);
+    font-size: 1.75em;
+    margin-top: -0.35em;
+}
+.truck-bot-btn {
+    margin-left: 1.5em;
+    /* background-color: rgb(245, 115, 59) !important; */
+    color: rgb(250, 250, 250) !important;
+    font-weight: 400;
 }

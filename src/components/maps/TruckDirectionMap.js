@@ -9,7 +9,7 @@ const {
   GoogleMap,
   DirectionsRenderer,
 } = require("react-google-maps");
-const demoFancyMapStyles = require("../../assets/styles/demoFancyMapStyles.json");
+const demoFancyMapStyles = require("../../assets/styles/truckFancyMapStyles.json");
 
 const MapWithADirectionsRenderer = compose(
   withProps({
@@ -25,8 +25,8 @@ const MapWithADirectionsRenderer = compose(
       const DirectionsService = new google.maps.DirectionsService();
 
       DirectionsService.route({
-        origin: new google.maps.LatLng(51.498246, -0.129274),
-        destination: new google.maps.LatLng(51.302181, -0.717972),
+        origin: new google.maps.LatLng(51.302181, -0.717972),
+        destination: new google.maps.LatLng(51.267672, -1.094781),
         travelMode: google.maps.TravelMode.DRIVING,
       }, (result, status) => {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -50,8 +50,8 @@ const MapWithADirectionsRenderer = compose(
         options={{
             suppressMarkers: true,
             polylineOptions: { 
-              strokeColor: 'white',
-              strokeWeight : '10'
+                strokeColor: 'rgb(253, 207, 90)',
+                strokeWeight : '10'
             }
         }}
         defaultCenter={new google.maps.LatLng(51.476012, 0.149261)}
