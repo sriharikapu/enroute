@@ -10,6 +10,7 @@ import '../assets/css/manufacturer.css';
 import DirectionMap from './DirectionMap';
 import BaseMap from './BaseMap';
 import SKUTable from './SKUTable';
+import Finalize from './Finalize';
 
 class Manufacturer extends Component {
     state = { map: null };
@@ -18,10 +19,20 @@ class Manufacturer extends Component {
         this.props.plsHelpMe();
     }
     showMap() {
-        this.setState({map: null});
+        this.setState({map: true});
     }
     displayMap() {
         if(this.state.map) {
+            $( ".manufactuer-body-table" ).addClass("moveFromBottomFade");
+            $( ".manufactuer-body-table").remove();
+            $('.manufacturer-main-text').text('Review Shipping Route Path:');
+            $( ".manufacturer-main-text" ).addClass("moveFromTopFade delay200");
+            $('.manufacturer-btn').text('[ Finalize Ship ]');
+            $('.manufacturer-btn').addClass("moveFromTopFade delay200");
+            // display finalized
+            $(".finalize-area").addClass("moveFromBottomFade");
+            $(".finalize-area").show();
+            
             return( <DirectionMap className="map-section" /> );
         }else{
             return( <BaseMap className="map-section" /> );
@@ -37,7 +48,7 @@ class Manufacturer extends Component {
         return (
             <div className="manufacturer-bg">
                 
-                <div className="splash-sticker">
+                <div className="splash-sticker moveFromTopFade">
                     <div className="manufactuer-section">
 
                         {/* sticky header */}
@@ -58,10 +69,11 @@ class Manufacturer extends Component {
                                 </div>
                             </div>
                         </div>
+
                         {/* sticky body */}
                         <div className="manufactuer-name-section">
 
-                            <div className="manufactuer-company-name moveFromTopFade delay200">
+                            <div className="manufactuer-company-name moveFromTopFade delay300">
                                 <div className="row">
                                     <div className="col s8 m8 white z-depth-3">
                                         <div className="manufactuer-body-left">
@@ -98,15 +110,16 @@ class Manufacturer extends Component {
                                         </div>
                                         <SKUTable className="sku-table-section" />
 
-                                        <div className="sku-table-btn">
-                                            Ready to Ship
-                                        </div>
+                                        <div className="sku-table-btn" onClick={() => this.showMap()}>Ready to Ship</div>
 
                                     </div>
                                 </div>
                             </div>
 
                         </div>
+
+                        {/* finalized */}
+                        <Finalize />
 
                     </div>
                 </div>

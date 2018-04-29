@@ -18,8 +18,9 @@
 }
 .manufacturer-btn {
     margin-top: -0.35em;
-    margin-left: 1.5em;
+    /* margin-left: 1.5em; */
     color: rgb(80, 175, 175);
+    text-align: center;
 }
 .manufacturer-btn:hover { 
     color: #fff7b2;
@@ -133,7 +134,6 @@
 }
 .sku-table-btn {
     color: white;
-    background-color: rgba(132, 198, 215, 1) !important;
     height: 3.5em;
     font-size: 1em;
     text-align: center;
@@ -141,9 +141,81 @@
     margin-left: 1em;
     margin-right: 1em;
     padding: 1em;
+    background-color: #25a2a2 !important;
 }
 .sku-table-btn:hover {
     cursor: pointer;
-    /* color: rgb(32, 84, 140); */
-    background-color: #25a2a2 !important;
+    background-color: rgba(132, 198, 215, 1) !important;
+}
+
+.finalize-area {
+    display: none;
+}
+.finalize-section {
+    background-color: #ffffff !important
+}
+.finalize-block {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 25em;
+    background-color: #4f4b4b !important
+}
+.finalize-start-icon {
+    color: rgb(106, 192, 198);
+    margin-top: 1em;
+    margin-left: 2.5em;
+    font-size: 2em !important;
+    text-align: center;
+}
+.finalize-start-text {
+    color: rgb(106, 192, 198);
+    height: 2.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    border: 0.05em solid rgb(106, 192, 198);
+}
+.finalize-end-icon {
+    color: rgb(232, 116, 153);
+    margin-top: 1em;
+    margin-left: 2.5em;
+    font-size: 2em !important;
+    text-align: center;
+}
+.finalize-end-text {
+    color: rgb(232, 116, 153);
+    height: 2.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    border: 0.05em solid rgb(232, 116, 153);
+}
+.finalize-go-icon {
+    color: rgb(146, 198, 83);
+    margin-top: 1em;
+    margin-left: 2.5em;
+    font-size: 2em !important;
+    text-align: center;
+}
+.finalize-go-btn {
+    background-color: rgb(146, 198, 83);
+    height: 2.5em;
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 0.5em;
+    text-align: center;
+    border: 0.05em solid rgb(255, 255, 255);
+}
+.finalize-go-btn:hover {
+    cursor: pointer;
+    background-color: rgb(233, 204, 132);
+    border: 0.05em solid rgb(233, 204, 132);
 }
